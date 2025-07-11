@@ -1,0 +1,14 @@
+/* style.css armado por CHORCH */
+
+.logo-header {
+    max-width: 150px; /* Ajusta el ancho máximo de tu logo */
+    height: auto;    /* Mantiene la proporción de aspecto del logo */
+    display: block;  /* Para asegurar que no haya espacio extra debajo de la imagen */
+    margin: 0 auto;  /* Centra el logo si es necesario, ajusta según tu diseño */
+}
+
+/* Si quieres que el logo en la sección "intro" tenga un tamaño diferente,
+   puedes ser más específico con los selectores: */
+#intro .logo-header {
+    max-width: 200px; /* Ejemplo de un tamaño diferente para el logo en la sección intro */
+}
