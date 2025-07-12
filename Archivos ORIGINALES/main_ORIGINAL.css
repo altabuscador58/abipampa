@@ -2310,9 +2310,3 @@ input, select, textarea {
 			}
 
 		}
-		/* Estilos para el logo en la sección Intro */
-.logo-intro {
-  max-width: 300px; /* Ajusta este valor para controlar el ancho máximo del logo */
-  height: auto; /* Esto asegura que la altura se ajuste automáticamente para mantener la proporción */
-  vertical-align: middle; /* Útil para alinear si hay texto o elementos alrededor */
-}
