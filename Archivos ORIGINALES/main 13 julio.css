@@ -916,46 +916,40 @@ input, select, textarea {
 
 /* Icon */
 
-			.icon {
-				position: relative;
-				text-decoration: none;
-				/* El tamaño del icono se manejará implícitamente por el line-height y font-size */
-			}
+	.icon {
+		text-decoration: none;
+		position: relative;
+		text-decoration: none;
+	}
 
-			.icon:before {
-				-moz-osx-font-smoothing: grayscale;
-				-webkit-font-smoothing: antialiased;
-				display: inline-block;
-				font-style: normal;
-				font-variant: normal;
-				text-rendering: auto;
-				line-height: 1; /* Esto es clave para el tamaño del icono en sí */
-				text-transform: none !important;
-				font-family: 'Font Awesome 5 Free';
-				font-weight: 400;
-				/* Aseguramos que el icono tenga el tamaño deseado */
-				font-size: 1.5em; /* Ajusta este valor si quieres el icono más grande o más pequeño */
-			}
+		.icon:before {
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			display: inline-block;
+			font-style: normal;
+			font-variant: normal;
+			text-rendering: auto;
+			line-height: 1;
+			text-transform: none !important;
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 400;
+		}
 
-			/* Mantén esta regla, ya que el .label dentro del .icon sigue siendo solo para accesibilidad */
-			.icon > .label {
-				display: none;
-			}
+		.icon:before {
+			line-height: inherit;
+		}
 
-			.icon.solid:before {
-				font-weight: 900;
-			}
+		.icon > .label {
+			display: none;
+		}
 
-			.icon.brands:before {
-				font-family: 'Font Awesome 5 Brands';
-			}
+		.icon.solid:before {
+			font-weight: 900;
+		}
 
-			/* Estilos adicionales para el texto que agregaremos */
-			.icon-text {
-				white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
-				font-size: 1em; /* Tamaño del texto, ajusta si es necesario */
-				/* Puedes añadir más estilos aquí, como color, font-weight, etc. */
-			}
+		.icon.brands:before {
+			font-family: 'Font Awesome 5 Brands';
+		}
 
 /* Image */
 
@@ -1167,36 +1161,22 @@ input, select, textarea {
 
 /* Icons */
 
-			ul.icons {
-				cursor: default;
-				list-style: none; /* Asegura que no haya viñetas de lista */
-				padding: 0; /* Remueve el padding por defecto de la lista */
-				margin: 0; /* Remueve el margen por defecto de la lista */
-			}
+	ul.icons {
+		cursor: default;
+	}
 
-			ul.icons li {
-				display: inline-block;
-				margin: 0 0.75em; /* Añade un poco de espacio entre los elementos de la lista */
-				vertical-align: middle; /* Ayuda a alinear los elementos de la lista si hay diferentes alturas */
-			}
+		ul.icons li {
+			display: inline-block;
+		}
 
-			ul.icons a {
-				display: flex; /* ¡Aquí está el truco! Usamos Flexbox */
-				align-items: center; /* Alinea verticalmente el icono y el texto en el centro */
-				justify-content: flex-start; /* Alinea horizontalmente al inicio */
-				gap: 0.5em; /* Espacio entre el icono y el texto */
-				/* Las siguientes propiedades de ancho, alto y line-height del 'a' original
-				ya no son tan relevantes para el contenedor del icono+texto completo,
-				pero las mantendremos para el tamaño inicial del área del icono. */
-				width: auto; /* Dejamos que el ancho se ajuste al contenido */
-				height: 2em; /* Mantén la altura para el icono */
-				line-height: 2em; /* Mantén la altura de línea para el icono */
-				text-align: left; /* Alineamos el texto a la izquierda dentro del flex container */
-				border: 0;
-				text-decoration: none; /* Asegura que el enlace no tenga subrayado */
-				color: inherit; /* Hereda el color del texto de su padre */
-			}
-
+		ul.icons a {
+			display: inline-block;
+			width: 2em;
+			height: 2em;
+			line-height: 2em;
+			text-align: center;
+			border: 0;
+		}
 
 /* Sections/Article */
 
